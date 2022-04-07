@@ -3,7 +3,7 @@ import useFetch from "../Custom Hooks/useFetch";
 
 const Gif_1 = () => {
   const [{ gif }, fetchGIF] = useFetch(
-    `https://api.giphy.com/v1/gifs/random?api_key=cBwaHo66byL5Sw2g5fkdboXB4wtASK7R`
+    `https://api.giphy.com/v1/gifs/random?api_key=${Access_key}`
   );
 
   useEffect(() => {
