@@ -5,7 +5,7 @@ const GIF_2 = () => {
   const [tag, setTag] = useState("dogs");
 
   const [{ gif }, fetchGIF] = useFetch(
-    `https://api.giphy.com/v1/gifs/random?api_key=cBwaHo66byL5Sw2g5fkdboXB4wtASK7R&tag=${tag}`
+    `https://api.giphy.com/v1/gifs/random?api_key=${Access_Key}&tag=${tag}`
   );
 
   useEffect(() => {
